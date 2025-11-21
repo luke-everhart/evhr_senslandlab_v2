@@ -5,16 +5,16 @@ FROM: ubuntu:22.04
     EVHR container for running EVHR scripts
 
 %post
-    apt-get update && apt-get install -y \
-        wget \
-        git \
-        tar \
-        bzip2 \
-        ca-certificates \
-        build-essential \
-        python3 \
-        python3-pip \
-        curl
+   # apt-get update && apt-get install -y \
+   #     wget \
+   #     git \
+   #     tar \
+   #     bzip2 \
+   #     ca-certificates \
+   #    build-essential \
+   #     python3 \
+   #     python3-pip \
+   #     curl
 
 	
     mkdir -p /usr/local/evhr
@@ -24,7 +24,7 @@ FROM: ubuntu:22.04
     git clone https://github.com/typowao/evhr_senslandlab.git temp_repo
 
     # Copy all folders and files (not just scripts) directly into /usr/local/evhr
-    cp -r ./temp_repo/evhr_senslandlab/* /usr/local/evhr/
+    cp -r ./temp_repo/evhr_senslandlab/ /usr/local/evhr/
 
     chmod -R a+rwx /usr/local/evhr/scripts/run_evhr || true
 
