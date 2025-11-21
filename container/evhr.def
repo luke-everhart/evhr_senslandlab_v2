@@ -1,3 +1,6 @@
+﻿Bootstrap: docker
+From: ubuntu:22.04
+
 %help
     EVHR container for running EVHR scripts
 
