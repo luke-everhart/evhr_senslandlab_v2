@@ -21,10 +21,10 @@ FROM: ubuntu:22.04
     cd /usr/local/evhr
 
     # Clone your GitHub repo
-    git clone https://github.com/typowao/evhr_senslandlab.git temp_repo
+    git clone https://github.com/typowao/evhr_senslandlab.git /usr/local/evhr
 
     # Copy all folders and files (not just scripts) directly into /usr/local/evhr
-    cp -r ./temp_repo/evhr_senslandlab/ /usr/local/evhr/
+    # cp -r ./usr/local/evhr/evhr_senslandlab/ /usr/local/evhr/
 
-    chmod a+rwx -R /usr/local/evhr/scripts/run_evhr || true
+    chmod a+rwx -R /usr/local/evhr || true
 
