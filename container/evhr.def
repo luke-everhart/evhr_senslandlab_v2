@@ -5,16 +5,16 @@ FROM: ubuntu:22.04
     EVHR container for running EVHR scripts
 
 %post
-   # apt-get update && apt-get install -y \
-   #     wget \
-   #     git \
-   #     tar \
-   #     bzip2 \
-   #     ca-certificates \
-   #    build-essential \
-   #     python3 \
-   #     python3-pip \
-   #     curl
+    apt-get update && apt-get install -y \
+        wget \
+        git \
+        tar \
+        bzip2 \
+        ca-certificates \
+       build-essential \
+        python3 \
+        python3-pip \
+        curl
 
 	
     mkdir -p /usr/local/evhr
