@@ -1,10 +1,10 @@
 
 import os
 
-from core.model.BaseFile import BaseFile
-from core.model.SystemCommand import SystemCommand
+from model.BaseFile import BaseFile
+from model.SystemCommand import SystemCommand
 
-from evhr.model.EvhrUtils import EvhrUtils
+from model.EvhrUtils import EvhrUtils
 
 
 # -----------------------------------------------------------------------------

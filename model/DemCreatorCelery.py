@@ -2,8 +2,8 @@
 from celery import group
 from celery.utils.log import get_task_logger
 
-from evhr.model.CeleryConfiguration import app
-from evhr.model.DemCreator import DemCreator
+from model.CeleryConfiguration import app
+from model.DemCreator import DemCreator
 
 logger = get_task_logger(__name__)
 

@@ -1,9 +1,9 @@
 import logging
 import pathlib
 
-from core.model.Envelope import Envelope
+from model.Envelope import Envelope
 
-from evhr.model.InputDem import InputDem
+from model.InputDem import InputDem
 
 
 # ----------------------------------------------------------------------------

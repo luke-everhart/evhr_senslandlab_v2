@@ -6,8 +6,8 @@ from xml.dom import minidom
 from osgeo import ogr
 from osgeo import gdal
 
-from core.model.Envelope import Envelope
-from core.model.SystemCommand import SystemCommand
+from model.Envelope import Envelope
+from model.SystemCommand import SystemCommand
 
 
 # ----------------------------------------------------------------------------

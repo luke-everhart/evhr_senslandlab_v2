@@ -2,7 +2,7 @@ import os
 import numpy as np
 
 # from core.model.DgFile import DgFile
-from core.model.SystemCommand import SystemCommand
+from model.SystemCommand import SystemCommand
 
 
 # ------------------------------------------------------------------------------

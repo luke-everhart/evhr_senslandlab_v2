@@ -12,16 +12,16 @@ from osgeo import osr
 from osgeo.osr import CoordinateTransformation
 from osgeo.osr import SpatialReference
 
-from core.model.BaseFile import BaseFile
-from core.model.DgFile import DgFile
-from core.model.Envelope import Envelope
-from core.model.GeospatialImageFile import GeospatialImageFile
-from core.model.SystemCommand import SystemCommand
+from model.BaseFile import BaseFile
+from model.DgFile import DgFile
+from model.Envelope import Envelope
+from model.GeospatialImageFile import GeospatialImageFile
+from model.SystemCommand import SystemCommand
 
-from evhr.model.ToaCalculation import ToaCalculation
-from evhr.model.InputDem import InputDem
-from evhr.model.AsterSrtmDem import AsterSrtmDem
-from evhr.model.EvhrUtils import EvhrUtils
+from model.ToaCalculation import ToaCalculation
+from model.InputDem import InputDem
+from model.AsterSrtmDem import AsterSrtmDem
+from model.EvhrUtils import EvhrUtils
 
 
 # -----------------------------------------------------------------------------
