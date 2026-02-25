@@ -152,10 +152,14 @@ class InputDem(object):
 
         SystemCommand(cmd, self._logger, True)
 
+
+        print(f"DEM Name : {outDemName.strip('-adj.tif')}\n\n\n\n\n")
+
+
         # Run mosaicked DEM through geoid correction
         cmd = self.BASE_SP_CMD + \
             'dem_geoid ' + \
-            outDemNameTemp + ' --geoid EGM96 -o ' + \
+            outDemNameTemp + ' --geoid EGM96 -o .' + \
             outDemName.strip('-adj.tif') + \
             ' --reverse-adjustment'
 

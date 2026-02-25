@@ -6,7 +6,7 @@ import logging
 import os
 import sys
 
-from evhr.model.DemCreator import DemCreator
+from model.DemCreator import DemCreator
 
 
 # -----------------------------------------------------------------------------

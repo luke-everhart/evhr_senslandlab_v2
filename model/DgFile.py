@@ -30,16 +30,22 @@ class DgFile(GeospatialImageFile):
         # Check that the file is NITF or TIFF
         extension = os.path.splitext(fileName)[1]
 
-        if extension != '.ntf' and extension != '.tif':
+        if extension != '.ntf' and extension != '.tif' and extension != ".TIF":
             raise RuntimeError('{} is not a NITF or TIFF'.format(fileName))
 
         self.extension = extension
 
         # Ensure the XML file exists.
         xmlFileName = fileName.replace(self.extension, '.xml')
+        xmlFileNameAlt = fileName.replace(self.extension, ".XML")
+
 
         if not os.path.exists(xmlFileName):
-            raise FileNotFoundError('{} does not exist'.format(xmlFileName))
+            if not os.path.exists(xmlFileNameAlt):
+                raise FileNotFoundError('{} does not exist'.format(xmlFileName))
+            
+            # Swith to ALL CAPS xml file names
+            xmlFileName = xmlFileNameAlt
 
         self.xmlFileName = xmlFileName
 

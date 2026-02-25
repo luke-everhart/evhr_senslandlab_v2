@@ -7,9 +7,9 @@ import os
 import pathlib
 import sys
 
-from core.model.ILProcessController import ILProcessController
-from evhr.model.DemCreator import DemCreator
-from evhr.model.DemCreatorCelery import DemCreatorCelery
+from model.ILProcessController import ILProcessController
+from model.DemCreator import DemCreator
+from model.DemCreatorCelery import DemCreatorCelery
 
 
 # -----------------------------------------------------------------------------
