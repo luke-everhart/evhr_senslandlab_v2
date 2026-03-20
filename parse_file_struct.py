@@ -16,3 +16,4 @@ for (root, dirs, file) in os.walk(path):
 with open(argv[2], 'w') as f:
     for line in imagery_files:
         f.write(line)
+        f.write('\n')
